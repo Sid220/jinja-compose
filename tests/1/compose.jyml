@@ -1,0 +1,36 @@
+services:
+  server:
+    build:
+      context: .
+    image: sid220/apriltag_localisation:latest
+    environment:
+      - DAPRILTAG_PRODUCTION=1
+      - OPENCV_VIDEOIO_DEBUG=1
+    device_cgroup_rules:
+      - 'c *:* rmw'
+    volumes:
+      - /dev:/dev
+    #    devices:
+    #      - /dev/video0:/dev/video0
+    deploy:
+      replicas: 1
+    #      placement:
+    #        max_replicas_per_node: 1
+    #    restart: always
+    networks:
+      - apriltag
+    {% if JinjaCompose.is_leader() %}
+    depends_on:
+      - redis
+    {% endif %}
+  {% if JinjaCompose.is_leader() %}
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
+    networks:
+      - apriltag
+  {% endif %}
+networks:
+  apriltag:
+
