@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Docker compose to the next level with Jinja2 templating'
 LONG_DESCRIPTION = 'Docker compose to the next level with Jinja2 templating'
 
