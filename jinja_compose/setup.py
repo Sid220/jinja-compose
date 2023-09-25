@@ -20,6 +20,8 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    scripts=['jinja_compose/jinja_compose.py'],
+    entry_points={
+        "console_scripts": ['jinja_compose=jinja_compose:main']
+    },
     packages=find_packages(),
 )
