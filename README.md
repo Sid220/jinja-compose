@@ -1,4 +1,6 @@
 # Jinja Compose
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/sid220/jinja-compose/pytest.yml?logo=github&label=Tests&link=https%3A%2F%2Fgithub.com%2FSid220%2Fjinja-compose%2Factions%2Fworkflows%2Fpytest.yml) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jinja-compose-wrapper) ![PyPI - Status](https://img.shields.io/pypi/status/jinja-compose-wrapper?logo=pypi&label=PyPI%20Status) ![PyPI - License](https://img.shields.io/pypi/l/jinja-compose-wrapper) ![PyPI - Version](https://img.shields.io/pypi/v/jinja-compose-wrapper?label=PyPI%20Version&logo=pypi) ![PyPI - Format](https://img.shields.io/pypi/format/jinja-compose-wrapper?logo=pypi&label=PyPI%20Format)
+
 `jinja-compose` is a tool for running docker-compose commands with Jinja2 templating.
 
 ## Installation
