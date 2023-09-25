@@ -28,8 +28,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest pyyaml pytest-cov
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-#        python jinja_compose_wrapper/setup.py sdist bdist_wheel
-#        pip install ./dist/jinja_compose_wrapper-*-py3-none-any.whl --force-reinstall
+        python jinja_compose_wrapper/setup.py sdist bdist_wheel
+        pip install ./dist/jinja_compose_wrapper-*-py3-none-any.whl --force-reinstall
     - name: Test with pytest
       run: |
         pytest --cov=jinja_compose_wrapper --cov-report=xml
