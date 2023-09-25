@@ -1,5 +1,5 @@
 import os
-from libjinja_compose import JinjaComposeInject
+from jinja_compose.libjinja_compose import JinjaComposeInject
 
 
 class JinjaCompose(JinjaComposeInject):
