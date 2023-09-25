@@ -6,7 +6,7 @@ LONG_DESCRIPTION = 'Docker compose to the next level with Jinja2 templating'
 
 # Setting up
 setup(
-    name="jinja-compose",
+    name="jinja-compose-wrapper",
     version=VERSION,
     author="Sidney Trzepacz",
     author_email="<lafakeslimshady@gmail.com>",
@@ -21,7 +21,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     entry_points={
-        "console_scripts": ['jinja_compose=jinja_compose:main']
+        "console_scripts": ['jinja_compose=jinja_compose_wrapper:main']
     },
     packages=find_packages(),
 )
