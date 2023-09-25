@@ -3,7 +3,7 @@ from pathlib import Path
 p_directory = Path(__file__).parent.parent
 long_description = (p_directory / "README.md").read_text()
 
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 DESCRIPTION = 'Docker compose to the next level with Jinja2 templating'
 LONG_DESCRIPTION = 'Docker compose to the next level with Jinja2 templating'
 
