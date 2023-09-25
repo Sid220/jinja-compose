@@ -3,7 +3,7 @@ import yaml
 
 
 def test_file_generation():
-    subprocess.run(["./venv/bin/jinja_compose", "-i", "tests/test_generation/compose.jyml", "-o",
+    subprocess.run(["jinja_compose", "-i", "tests/test_generation/compose.jyml", "-o",
                     "tests/test_generation/compose.yaml", "-p", "tests/test_generation/compose.py", "-d",
                     "echo"])
 
